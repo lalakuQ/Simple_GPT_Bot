@@ -12,7 +12,10 @@ import json
 from lang_pack.lang import lang
 from dotenv import load_dotenv
 from keyboard.keyboards import kbs
+import asyncio
 
+loop = asyncio.new_event_loop()
+asyncio.set_event_loop(loop)
 load_dotenv()
 logging.basicConfig(level = logging.INFO)
 
